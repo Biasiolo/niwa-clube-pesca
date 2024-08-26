@@ -286,18 +286,19 @@ body {
 
 .video-section {
     background-color:#110d09; // Cor de fundo coerente com as outras seções
-    padding: 30px;
+    padding: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 54vh; // Altura de 50% do viewport
+    height: 60vh; // Altura de 50% do viewport
 
     .video {
         width: 80%; // Largura proporcional
-        max-height: 100%; // Garante que o vídeo não ultrapasse a altura da seção
+        height: 100%; // Garante que o vídeo não ultrapasse a altura da seção
         border: 2px solid #b1711f;
         border-radius: 6px;
         box-shadow: 1px 1px 6px #110d09;
+
     }
 }
 
