@@ -1,0 +1,17 @@
+{
+  "name": "site2-niwa-clube-pesca",
+  "version": "1.0.0",
+  "description": "Site Niwa Clube de Pesca",
+  "scripts": {
+    "dev": "parcel src/index.html src/styles/main.scss src/scripts/main.js",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Biasiolo",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "parcel": "^2.12.0"
+  }
+}

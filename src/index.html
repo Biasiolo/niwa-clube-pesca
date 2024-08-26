@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles/main.scss">
+    <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script async src="./scripts/main.js"></script>
+
+    <title>NIWA CLUBE de PESCA</title>
+</head>
+
+<body>
+    <header class="header d-flex align-items-center">
+        <div class="container align-items-center">
+            <nav class="navbar navbar-expand-lg justify-content-end align-items-center">
+                <!-- Botão do menu hamburger -->
+                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-1 text-center"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item px-1 text-center"><a class="nav-link" href="#about">Sobre</a></li>
+                        <li class="nav-item px-1 text-center"><a class="nav-link" href="#contact">Localização</a></li>
+                        <li class="nav-item px-1 text-center"><a class="nav-link" href="#contact">Vendas</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Logo sobreposto -->
+    <div class="logo-container">
+        <img src="./images/logo-niwa-clube.png" alt="NIWA CLUBE de PESCA Logo" width="220" height="220">
+    </div>
+
+    <!-- Banner estático -->
+    <section class="banner">
+        <img src="./images/banner2.png" alt="Banner NIWA CLUBE de PESCA" class="img-fluid">
+    </section>
+
+    <!-- Seção de Conversão -->
+    <section class="conversion-section">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-9 text-center">
+                    <h1 class="conversion-title">NIWA CLUBE DE PESCA</h1>
+                    <h2>Os melhores momentos com a família e amigos, às margens do Rio Mogi-Guaçu.</h2>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#about" class="btn">Seja Sócio!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrossel -->
+    <section class="carousel-section text-center">
+        <div id="smallCarousel" class="carousel slide mx-auto" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/portaria.jpg" class="d-block w-100" alt="Imagem 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/deck.jpg" class="d-block w-100" alt="Imagem 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/deck2.jpg" class="d-block w-100" alt="Imagem 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#smallCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#smallCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Galeria imagens -->
+    <section class="image-section text-center m-0">
+        <div class="image-text px-2">
+            <h3 class="sub p-2">Descubra um lugar perfeito para relaxar</h3>
+            <p>O investimento que garante bons momentos em meio a natureza, com as melhores pescarias da região.</p>
+
+            <!-- Galeria de Imagens -->
+            <div class="image-gallery container pb-4">
+                <div class="row">
+                    <!-- Linha 1 -->
+                    <div class="col-md-3 p-1">
+                        <img src="./images/portaria.jpg" class="img-thumbnail" alt="Imagem 1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="0">
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <img src="./images/deck.jpg" class="img-thumbnail" alt="Imagem 2" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="1">
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <img src="./images/deck2.jpg" class="img-thumbnail" alt="Imagem 3" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="2">
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <img src="./images/rua.jpg" class="img-thumbnail" alt="Imagem 4" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="3">
+                    </div>
+                </div>
+                <div class="row mt-1">
+                    <!-- Linha 2 -->
+                    <div class="col-md-3 p-1">
+                        <img src="./images/churrasqueira.jpg" class="img-thumbnail" alt="Imagem 5"
+                            data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-slide-to="4">
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <img src="./images/gazebo.jpg" class="img-thumbnail" alt="Imagem 6" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="5">
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <img src="./images/play.jpg" class="img-thumbnail" alt="Imagem 7" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="6">
+                    </div>
+                    <div class="col-md-3 p-1">
+                        <img src="./images/passeio.jpg" class="img-thumbnail" alt="Imagem 8" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" data-bs-slide-to="7">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div id="carouselModal" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./images/portaria.jpg" class="d-block w-100" alt="Imagem 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/deck.jpg" class="d-block w-100" alt="Imagem 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/deck2.jpg" class="d-block w-100" alt="Imagem 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/rua.jpg" class="d-block w-100" alt="Imagem 4">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/churrasqueira.jpg" class="d-block w-100" alt="Imagem 5">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/gazebo.jpg" class="d-block w-100" alt="Imagem 6">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/play.jpg" class="d-block w-100" alt="Imagem 7">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/passeio.jpg" class="d-block w-100" alt="Imagem 8">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselModal" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselModal" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próxima</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barra text-center justify-content-center">
+                <h3 class="sub2 py-2">Garanta seu título com <strong>preço especial</strong> no lançamento para os
+                    primeiros
+                    sócios exclusivos.</h3>
+                <div class="text-center py-2">
+                    <a href="#about"></a><button class="btn btn-primary">Saiba Mais</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video-section d-flex justify-content-center align-items-center">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/hbHelJ-RUNE" 
+                title="YouTube Niwa video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <div class="space"></div>
+
+    <section class="exclusive-benefits">
+        <div class="container text-center">
+            <h2 class="benefits-title">Vantagens dos Sócios Exclusivos</h2>
+            <img src="./images/logo-niwa-clube.png" alt="NIWA CLUBE de PESCA Logo" class="benefits-logo">
+            <ul class="benefits-list">
+                <li>► Uso exclusivo de uma área personalizável</li>
+                <li>► Contato direto com a natureza</li>
+                <li>► Segurança com monitoramento e controle de acesso</li>
+                <li>► Tablado exclusivo para pesca</li>
+                <li>► Galpão seguro para armazenamento de barcos</li>
+                <li>► Infraestrutura completa de lazer com Quiosque, Minicampo, Beach Tênis e Playground</li>
+                <li>► Ambiente privado e exclusivo</li>
+                <li>► Valorização de investimento por título</li>
+                <li>► Fácil acesso pela rodovia</li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
