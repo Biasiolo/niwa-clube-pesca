@@ -423,11 +423,11 @@ body {
     height: 20vh;
     width: 100%;
     overflow: hidden;
-    
+
     background-color: #f5e7bf;
 
     img {
-    
+
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -439,47 +439,48 @@ body {
 .formulario-section {
     font-family: "Roboto", sans-serif;
     padding: 12px;
-    background-color: #eddaa1;;
-  
+    background-color: #eddaa1;
+    ;
+
     .section-title {
         font-size: 2.2rem;
-            font-weight: 700;
-            color: #110d09;
-      text-align: center;
+        font-weight: 700;
+        color: #110d09;
+        text-align: center;
 
 
 
     }
-  
+
     .formu {
-      margin-bottom: 1.5rem;
-  
-      .form-label {
-        font-weight: 600;
-        color: #110d09; // Cor secundária do projeto
-        margin-bottom: 0.5rem;
-      }
-  
-      .form-control {
-        background-color: #f8f9fa; // Fundo leve para os inputs
-        border: 1px solid #ced4da; // Borda suave
-        padding: 0.75rem;
-        font-size: 1rem;
-        color: #495057; // Cor do texto
-        border-radius: 0.25rem;
-  
-        &:focus {
-          border-color: #110d09; // Cor de foco para inputs
-          box-shadow: 0 0 0 0.2rem rgba(24, 18, 12, 0.25);
+        margin-bottom: 1.5rem;
+
+        .form-label {
+            font-weight: 600;
+            color: #110d09; // Cor secundária do projeto
+            margin-bottom: 0.5rem;
         }
-      }
-  
-      textarea.form-control {
-        min-height: 150px;
-        resize: vertical; // Permitir redimensionamento vertical
-      }
+
+        .form-control {
+            background-color: #f8f9fa; // Fundo leve para os inputs
+            border: 1px solid #ced4da; // Borda suave
+            padding: 0.75rem;
+            font-size: 1rem;
+            color: #495057; // Cor do texto
+            border-radius: 0.25rem;
+
+            &:focus {
+                border-color: #110d09; // Cor de foco para inputs
+                box-shadow: 0 0 0 0.2rem rgba(24, 18, 12, 0.25);
+            }
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical; // Permitir redimensionamento vertical
+        }
     }
-  
+
     .btn {
         background-color: #110d09;
         color: #f5f4f0;
@@ -491,8 +492,8 @@ body {
         box-shadow: 1px 1px 3px #d1a56b, 1px 1px 3px #110d09;
         transition: color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease-in-out;
         display: inline-flex;
-      align-items: center;
-      justify-content: center;
+        align-items: center;
+        justify-content: center;
 
         &:hover {
             background-color: transparent;
@@ -500,20 +501,20 @@ body {
             border: 2px solid #110d09;
             box-shadow: 1px 1px 3px #d1a56b, 1px 1px 3px #110d09;
         }
-      
-  
-      i.bi-whatsapp {
-        font-size: 1.25rem;
-        margin-right: 0.5rem;
-      }
-    }
-  }
 
-  footer {
+
+        i.bi-whatsapp {
+            font-size: 1.25rem;
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+footer {
     padding: 20px;
     bottom: 0;
     width: 100%;
-    background-color: #110d09;
+    background-color: #b1711f;
     border-top: 2px solid #d1a56b;
     color: #f5f4f0;
     font-weight: 400;
@@ -529,4 +530,3 @@ body {
         max-width: 20px;
     }
 }
-  
