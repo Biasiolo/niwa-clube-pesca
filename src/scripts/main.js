@@ -11,6 +11,9 @@ function enviarWhatsApp() {
 
   // Abre o link do WhatsApp em uma nova aba
   window.open(linkWhatsApp, '_blank');
+
+  // Limpa o formulário
+  document.getElementById("whatsappForm").reset();
 }
 
 $(document).ready(function() {
