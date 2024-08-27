@@ -39,8 +39,10 @@
         rel="stylesheet">
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
 
 
 
@@ -242,15 +244,15 @@
             <h2 class="benefits-title">Vantagens dos Sócios Patrimoniais</h2>
             <img src="./images/logo-niwa-clube.png" alt="NIWA CLUBE de PESCA Logo" class="benefits-logo">
             <ul class="benefits-list">
-                <li>► Uso exclusivo de uma área personalizável</li>
-                <li>► Contato direto com a natureza</li>
-                <li>► Segurança com monitoramento e controle de acesso</li>
-                <li>► Tablado exclusivo para pesca</li>
-                <li>► Galpão seguro para armazenamento de barcos</li>
-                <li>► Infraestrutura completa de lazer com Quiosque, Minicampo, Beach Tênis e Playground</li>
-                <li>► Ambiente privado e exclusivo</li>
-                <li>► Valorização de investimento por título</li>
-                <li>► Fácil acesso pela rodovia</li>
+                <li><i class="bi bi-check-all"></i> Uso exclusivo de uma área personalizável</li>
+                <li><i class="bi bi-check-all"></i> Contato direto com a natureza</li>
+                <li><i class="bi bi-check-all"></i> Segurança com monitoramento e controle de acesso</li>
+                <li><i class="bi bi-check-all"></i> Tablado exclusivo para pesca</li>
+                <li><i class="bi bi-check-all"></i> Galpão seguro para armazenamento de barcos</li>
+                <li><i class="bi bi-check-all"></i> Infraestrutura completa de lazer com Quiosque, Minicampo, Beach Tênis e Playground</li>
+                <li><i class="bi bi-check-all"></i> Ambiente privado e exclusivo</li>
+                <li><i class="bi bi-check-all"></i> Valorização de investimento por título</li>
+                <li><i class="bi bi-check-all"></i> Fácil acesso pela rodovia</li>
             </ul>
         </div>
     </section>
@@ -270,10 +272,10 @@
 
                 <div class="col-md-6">
                     <div class="location-info p-3 text-center">
-                        <h3>Visite Ponto de Vendas no Local</h3>
+                        <h3><i class="bi bi-geo-alt"></i> Visite Ponto de Vendas no Local</h3>
                         <p>Rodovia SP 318, saída do Auto Posto Joval (estrada Rincão-Taquaral).</p>
                         <div class="qr-code text-center mt-4">
-                            <p><i class="bi bi-geo-alt"></i>Escaneie o QR Code para traçar a rota
+                            <p>Escaneie o QR Code para traçar a rota
                                 automaticamente:</p>
                             <img src="./images/qrcode.png" alt="QR Code" class="img-fluid rounded" style="max-width: 150px;">
                         </div>
@@ -296,6 +298,50 @@
             </div>
         </div>
     </section>
+
+
+    <section class="image-banner">
+        <img src="./images/banner2.png" alt="Banner Image" class="img-fluid">
+    </section>
+
+    <section id="formulario" class="formulario-section pt-2 pb-3">
+        <div class="container">
+            <div class="row">
+                <h2 class="text-center pt-3 section-title">Contato</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <form id="whatsappForm">
+                        <div class="mb-2 formu">
+                            <label for="nome" class="form-label fw-bold">Seu Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="mb-4 formu">
+                            <label for="email" class="form-label fw-bold">Seu E-mail</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn fw-bold mb-5" onclick="enviarWhatsApp()">
+                                <i class="bi bi-whatsapp"></i> Iniciar Conversa no WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container text-center">
+            <p>
+                <img src="./images/logo-niwa-clube.png" alt="Logo Profile Images" class="logo rounded"> &copy; 2024 |
+                <a href="#">Termos de Privacidade</a> |
+                <a href="https://github.com/Biasiolo" target="_blank">Desenvolvido por
+                    <img src="./images/github.svg" alt="logo github">
+                </a>
+            </p>
+        </div>
+    </footer>
 
 
 
