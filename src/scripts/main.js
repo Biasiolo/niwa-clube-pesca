@@ -17,8 +17,6 @@ $(document).ready(function() {
   // Vincula a função ao clique do botão
   $("#whatsappForm").on("submit", function(event) {
     event.preventDefault(); // Impede o envio do formulário
-    
+    enviarWhatsApp();
   });
 });
-
-enviarWhatsApp();
